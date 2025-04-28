@@ -7,10 +7,33 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-active {
+  background-color: rgb(155, 112, 5);
+  padding: 9px;
+  color: white;
+}
+
+li {
+  cursor: pointer;
+}
+.footer {
+  background-color: #242424;
+}
+.footer-text {
+  color: rgba(128, 128, 128, 0.986);
+}
+.footer-text h2 {
+  color: white;
+  font-weight: 600;
+  border-bottom: dashed 0.5px rgba(128, 128, 128, 0.986);
+  padding: 9px 0;
 }

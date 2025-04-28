@@ -1,12 +1,36 @@
 import React from "react";
-import Nav from "./components/Nav";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const App = () => {
+// Import your pages
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import Nav from "./components/Nav.jsx";
+import Services from "./pages/Services.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about", // ⬅️ paths are lowercase by convention
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/services",
+    element: <Services />,
+  },
+]);
+
+export default function App() {
   return (
-    <div>
-      <Nav />
-    </div>
+    <>
+      <RouterProvider router={router} />;
+    </>
   );
-};
-
-export default App;
+}
