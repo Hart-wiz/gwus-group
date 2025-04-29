@@ -56,7 +56,7 @@ const Footer = () => {
           </ul>
         </div>
       </section>
-      <section className=" text-blue-950">
+      <section className=" text-blue-950 px-9 py-4">
         Gwus Group of Companies © All Rights Reserved | Powered By : Weconetdata
         hub
       </section>

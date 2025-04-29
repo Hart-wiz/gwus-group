@@ -3,41 +3,77 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import ServiceCard from "../components/ServiceCard";
 import poster from "../assets/gwusposter.png";
+// import oilpump from "../assets/oilpump.jpg";
+import { cards } from "../assets/assets";
+import CompanyCard from "../components/CompanyCard";
 
 const Home = () => {
   return (
     <div className="text-black">
       <Nav />
-      <main className=" max-md:flex-col px-12 flex">
+      <main className=" max-md:flex-col px-12 pb-9 flex justify-center max-md:items-center max-md:px-4">
         <section className=" text-left ">
           <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
             MARKET SERVED
           </h1>
-          <div className="flex gap-8 flex-wrap   max-md:px-4 ">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+          <div className="flex gap-8 flex-wrap">
+            {cards.map((card) => (
+              <ServiceCard
+                image={card.image}
+                title={card.title}
+                text={card.about}
+                RN={card.RN}
+              />
+            ))}
           </div>
         </section>
-        <section className="w-[400px]">
-          <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
+        <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 ">
+          <h1 className="font-semibold text-3xl py-5 text-blue-950  max-md:text-2xl max-md:py-5">
             WELCOME
           </h1>
-          <div className="py-6  px-4 w-[350px]">
-            <img src={poster} alt="" className="w-[300px]" />
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti quasi cum, consectetur molestias, accusantium deserunt
-              </p>
-            </div>
-            <button className="bg-yellow-700 text-white w-full py-5 cursor-pointer hover:bg-red-700">
+          <div className=" w-[300px] flex flex-col max-md:items-center ">
+            <img src={poster} alt="" className="w-full h-[200px]" />
+
+            <p className="py-5 text-justify">
+              GWUS Group of Companies is a multi-sector conglomerate committed
+              to excellence, innovation, and sustainable growth, with
+              subsidiaries driving impact across key regional and global
+              industries.
+            </p>
+
+            <button className="bg-yellow-700 text-white w-full  cursor-pointer p-3 hover:bg-red-900">
               CONNECT WITH US
             </button>
           </div>
         </section>
       </main>
+      <section className="bg-blue-900 w-full h-auto  justify-between p-20  items-center font-bold text-white max-md:flex-col max-md:p-0  max-md:py-9  ">
+        <h1 className="text-xl font-semibold lined mb-4 max-md:text-center max-md:mb-0.5  ">
+          Allied Companies
+        </h1>
+        <div className="w-full h-auto flex justify-between  items-center font-bold text-white max-md:flex-col max-md:gap-0.9 max-md:flex max-md:gap-6 ">
+          <CompanyCard
+            company="COBEL OIL & GAS"
+            textBg="red-light-frame"
+            frameBg=""
+          />
+          <CompanyCard
+            company="GWUSQATAR LIMITED"
+            textBg="blue-light-frame "
+            frameBg="bg-green-400"
+          />
+          <CompanyCard
+            company="GWUSCOBEL LIMITED"
+            textBg="amber-light-frame"
+            frameBg=""
+          />
+          <CompanyCard
+            company="GWUS TRADING & CONTRACTING"
+            textBg="gray-light-frame"
+            frameBg=""
+          />
+        </div>
+      </section>
       <Footer />
     </div>
   );
