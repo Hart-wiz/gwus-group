@@ -15,7 +15,7 @@ const ServiceCard = ({ title, text, image, RN }) => {
         className="w-40 h-25 object-cover rounded-md max-md:h-20 max-md:w-30"
       />
       <div className="">
-        <h2 className="text-md font-bold mb-2">
+        <h2 className="text-md font-bold mb-2 text-black">
           {title}
           <p className="text-blue-600 italic ">RN:{RN}</p>
         </h2>
