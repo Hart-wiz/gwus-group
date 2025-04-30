@@ -19,7 +19,7 @@ const Nav = () => {
       <div className="bg-white h-30 max-md:h-25 max-md:px-3 px-30 py-5 flex justify-between items-center">
         <div className="flex items-center text-black">
           <img src={logo} alt="company logo" className="w-25" />
-          <h2 className="font-extrabold text-xl max-md:text-sm text-blue-900 max-md:hidden">
+          <h2 className="font-extrabold text-xl max-md:text-sm text-blue-900 ">
             GWUS GROUP OF COMPANIES
           </h2>
         </div>
