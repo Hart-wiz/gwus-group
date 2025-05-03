@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Nav />
-      <main className="text-blue-950 flex justify-between  text-sm px-30 py-20 max-md:flex-col max-md:items-center">
+      <main className="text-blue-950 flex justify-between  text-sm px-30 py-9 max-md:flex-col max-md:items-center">
         <section className="w-[400px] mx-10 space-y-4 max-md:w-[300px] max-md:mx-0">
           <div>
             <h1 className="text-xl font-extrabold text-blue-800">

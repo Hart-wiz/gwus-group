@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div>
       <Nav />
-      <main className=" px-30 py-20 max-md:px-0 max-md:py-9">
+      <main className=" px-30 py-9 max-md:px-0 max-md:py-9">
         <h1 className="text-black font-bold text-xl max-md:text-lg max-md:px-4">
           OUR SERVICES
         </h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import MyMap from "../components/MyMap";
+
 import MyLeafletMap from "../components/MyLeafletMap";
 import Form from "../components/Form";
 
