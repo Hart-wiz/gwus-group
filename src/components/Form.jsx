@@ -38,7 +38,10 @@ const Form = () => {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:5173/thankyou"
+          value={
+            "http://localhost:5173/thankyou" ||
+            "http://gwus-group.vercel.app/thankyou"
+          }
         />
       </form>
     </div>
