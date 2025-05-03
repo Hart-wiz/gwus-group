@@ -7,6 +7,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Nav from "./components/Nav.jsx";
 import Services from "./pages/Services.jsx";
+import Thankyou from "./pages/Thankyou.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <Services />,
+  },
+  {
+    path: "/thankyou",
+    element: <Thankyou />,
   },
 ]);
 

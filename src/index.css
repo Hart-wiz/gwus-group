@@ -1,5 +1,6 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
 :root {
   font-family: roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -143,4 +144,15 @@ li {
   z-index: 1;
   color: white;
   padding: 20px;
+}
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+form input,
+textarea {
+  border: 1px solid black;
+  padding: 3px;
 }
