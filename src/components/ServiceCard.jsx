@@ -12,8 +12,9 @@ const ServiceCard = ({ title, text, image, RN }) => {
       <img
         src={image}
         alt="Oil Pump"
-        className="w-40 h-25 object-cover rounded-md max-md:h-20 max-md:w-30"
+        className="w-37 h-25 object-cover rounded-md max-md:h-20 max-md:w-30"
       />
+
       <div className="">
         <h2 className="text-md font-bold mb-2 text-black">
           {title}

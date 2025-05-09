@@ -10,9 +10,6 @@ const CompanyCard = ({ company, frameBg, textBg }) => {
           {company}
         </h2>
       </div>
-      {/* <h2 className="bg-blue-800 p-10">GWUSQATAR LIMITED</h2>
-          <h2 className="bg-amber-700 p-10">GWUSCOBEL LIMITED</h2>
-          <h2 className="bg-gray-800 p-10">GWUS TRADING & CONTRACTING</h2> */}
     </div>
   );
 };
