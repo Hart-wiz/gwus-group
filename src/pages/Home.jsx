@@ -6,46 +6,61 @@ import poster from "../assets/gwusposter.png";
 // import oilpump from "../assets/oilpump.jpg";
 import { cards } from "../assets/assets";
 import CompanyCard from "../components/CompanyCard";
+import ImageSlider from "../components/ImageSlider";
+import slide3 from "../assets/cobol3.png";
+import slide4 from "../assets/cobol4.jpg";
+import slide5 from "../assets/cobol5.jpg";
 
 const Home = () => {
+  const images = [slide3, slide4, slide5];
+  const articles = [
+    "COBEL focuses on Oil & Gas construction in both Onshore and Offshore projects. Depending on the size and scope of the project. COBEL will manage and lead a range of projects from beginning to end.",
+    "COBEL has got an experienced shutdown & maintenance department, which renders its expertise to all the clients in Qatar Oil & Gas Industry in executing their Shutdowns and Maintenance works.",
+    "COBEL Oil & Gas is committed to having an incident free workplace, providing safe environment to those involved in or affected by our activities. Effective health, safety and environmental leadership is essential in everything that we do. ",
+  ];
   return (
     <div className="text-black">
       <Nav />
-      <main className=" max-md:flex-col px-12 pb-9 flex justify-center max-md:items-center max-md:px-4">
-        <section className=" text-left ">
-          <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
-            MARKET SERVED
-          </h1>
-          <div className="flex gap-8 flex-wrap">
-            {cards.map((card) => (
-              <ServiceCard
-                image={card.image}
-                title={card.title}
-                text={card.about}
-                RN={card.RN}
-              />
-            ))}
-          </div>
+      <main className="flex flex-col ">
+        <section className="relative">
+          <ImageSlider images={images} article={articles} />
         </section>
-        <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 ">
-          <h1 className="font-semibold text-3xl py-5 text-blue-950  max-md:text-2xl max-md:py-5">
-            WELCOME
-          </h1>
-          <div className=" w-[300px] flex flex-col max-md:items-center ">
-            <img src={poster} alt="" className="w-full h-[200px]" />
+        <div className="flex-row flex max-md:flex-col px-12 pb-9  justify-center max-md:items-center max-md:px-4">
+          <section className=" text-left ">
+            <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
+              MARKET SERVED
+            </h1>
+            <div className="flex gap-8 flex-wrap">
+              {cards.map((card) => (
+                <ServiceCard
+                  image={card.image}
+                  title={card.title}
+                  text={card.about}
+                  RN={card.RN}
+                />
+              ))}
+            </div>
+          </section>
+          <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 ">
+            <h1 className="font-semibold text-3xl py-5 text-blue-950  max-md:text-2xl max-md:py-5">
+              WELCOME
+            </h1>
+            <div className=" w-[300px] flex flex-col max-md:items-center ">
+              <img src={poster} alt="" className="w-full h-[200px]" />
 
-            <p className="py-5 text-justify">
-              GWUS Group of Companies is a multi-sector conglomerate committed
-              to excellence, innovation, and sustainable growth, with
-              subsidiaries driving impact across key regional and global
-              industries.
-            </p>
+              <p className="py-5 text-justify">
+                GWUS Group of Companies is a multi-sector conglomerate committed
+                to excellence, innovation, and sustainable growth, with
+                subsidiaries driving impact across key regional and global
+                industries.
+              </p>
 
-            <button className="bg-yellow-700 text-white w-full  cursor-pointer p-3 hover:bg-red-900">
-              CONNECT WITH US
-            </button>
-          </div>
-        </section>
+              <button className="bg-yellow-700 text-white w-full  cursor-pointer p-3 hover:bg-red-900">
+                CONNECT WITH US
+              </button>
+            </div>
+          </section>
+        </div>
       </main>
       <section className="bg-blue-900 w-full h-auto  justify-between p-20  items-center font-bold text-white max-md:flex-col max-md:p-0  max-md:py-9  ">
         <h1 className="text-xl font-semibold lined mb-4 max-md:text-center max-md:mb-0.5  ">
