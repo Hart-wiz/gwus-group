@@ -42,7 +42,7 @@ const About = () => {
               distribution within the oil and gas sector.
             </li>
             <li>
-              <b className="text-blue-900">CWUSQatar Limited – </b>A trusted
+              <b className="text-blue-900">GWUSQatar Limited – </b>A trusted
               player in international contracting, logistics, and engineering
               services based in Qatar.
             </li>

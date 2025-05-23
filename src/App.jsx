@@ -8,6 +8,7 @@ import Contact from "./pages/Contact.jsx";
 import Nav from "./components/Nav.jsx";
 import Services from "./pages/Services.jsx";
 import Thankyou from "./pages/Thankyou.jsx";
+import { Cobol } from "./pages/cobol.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/thankyou",
     element: <Thankyou />,
+  },
+  {
+    path: "/cobol",
+    element: <Cobol />,
   },
 ]);
 

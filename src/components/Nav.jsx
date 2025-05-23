@@ -62,7 +62,7 @@ const Nav = () => {
 
       <div className="bg-blue-950 flex w-full py-5 justify-end px-30 max-md:px-7 text-sm">
         <p className="text-white mr-2">NEED SUPPORT?</p>
-        <p className="text-yellow-300 font-semibold">+(234) 803-414904</p>
+        <p className="text-yellow-300 font-semibold">+(974) 77045197</p>
       </div>
     </>
   );
