@@ -1,13 +1,10 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 import gwusposter from "../assets/gwusposter.png";
 import check from "/check.svg";
 
 const About = () => {
   return (
     <div>
-      <Nav />
       <main className="text-blue-950 flex justify-between  text-sm px-30 py-9 max-md:flex-col max-md:items-center">
         <section className="w-[400px] mx-10 space-y-4 max-md:w-[300px] max-md:mx-0">
           <div>
@@ -99,7 +96,6 @@ const About = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

@@ -10,6 +10,8 @@ import ImageSlider from "../components/ImageSlider";
 import slide3 from "../assets/cobol3.png";
 import slide4 from "../assets/cobol4.jpg";
 import slide5 from "../assets/cobol5.jpg";
+import About from "../components/About";
+import Services from "../components/Services";
 
 const Home = () => {
   const images = [slide3, slide4, slide5];
@@ -26,22 +28,13 @@ const Home = () => {
           <ImageSlider images={images} article={articles} />
         </section>
         <div className="flex-row flex max-md:flex-col px-12 pb-9  justify-center max-md:items-center max-md:px-4">
-          <section className=" text-left ">
+          <section className=" text-left pt-30 " id="services">
             <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
               MARKET SERVED
             </h1>
-            <div className="flex gap-5 flex-wrap">
-              {cards.map((card) => (
-                <ServiceCard
-                  image={card.image}
-                  title={card.title}
-                  text={card.about}
-                  RN={card.RN}
-                />
-              ))}
-            </div>
+            <Services />
           </section>
-          <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 ">
+          <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 pt-30">
             <h1 className="font-semibold text-3xl py-5 text-blue-950  max-md:text-2xl max-md:py-5">
               WELCOME
             </h1>
@@ -62,10 +55,14 @@ const Home = () => {
           </section>
         </div>
       </main>
+      <div className="pt-30" id="about">
+        <About />
+      </div>
       <section className="bg-blue-900 w-full h-auto  justify-between p-20  items-center font-bold text-white max-md:flex-col max-md:p-0  max-md:py-9  ">
         <h1 className="text-xl font-semibold lined mb-4 max-md:text-center max-md:mb-0.5  ">
           Allied Companies
         </h1>
+
         <div className="w-full h-auto flex justify-between  items-center font-bold text-white max-md:flex-col max-md:gap-0.9 max-md:flex max-md:gap-6 ">
           <CompanyCard
             company="COBEL OIL & GAS"
@@ -89,6 +86,7 @@ const Home = () => {
           />
         </div>
       </section>
+
       <Footer />
     </div>
   );
