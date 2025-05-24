@@ -8,7 +8,7 @@ import Contact from "./pages/Contact.jsx";
 import Nav from "./components/Nav.jsx";
 import Services from "./pages/Services.jsx";
 import Thankyou from "./pages/Thankyou.jsx";
-import { Cobol } from "./pages/cobol.jsx";
+// import Cobol from "./pages/Cobol.jsx";
 
 const router = createBrowserRouter([
   {

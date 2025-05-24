@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Cobol = () => {
+export default const Cobol = () => {
   return (
     <div>
       <Nav />
