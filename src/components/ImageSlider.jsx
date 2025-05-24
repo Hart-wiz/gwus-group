@@ -21,7 +21,7 @@ const ImageSlider = ({ images, article }) => {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full max-w-full h-screen mx-auto overflow-hidden shadow-md">
+    <div className="relative w-full max-w-full h-screen mx-auto overflow-hidden shadow-md ">
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex}`}

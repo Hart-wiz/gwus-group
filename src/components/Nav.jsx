@@ -28,9 +28,9 @@ const Nav = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="max-md:hidden text-blue-950 font-semibold flex gap-15 text-md">
+        <ul className="max-md:hidden  text-blue-950 font-semibold flex gap-9 text-md z-50">
           {navItems.map((item) => (
-            <li key={item.path} className="p-[9px]">
+            <li key={item.path} className="p-[9px] ">
               <a href={item.path} className="hover:text-blue-800">
                 {item.name}
               </a>
@@ -50,7 +50,7 @@ const Nav = () => {
 
       {/* Mobile Nav with Animation */}
       <ul
-        className={`md:hidden fixed top-[80px] left-0 w-full bg-blue-900 text-center font-semibold text-gray-300 transform transition-all duration-300 ease-in-out ${
+        className={`md:hidden fixed top-[80px] pt-9 z-50 left-0 w-full bg-black/80 h-1/2 text-center font-semibold text-gray-300 transform transition-all duration-300 ease-in-out ${
           menuShow
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-3 pointer-events-none"
