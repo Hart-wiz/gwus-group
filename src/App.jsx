@@ -31,10 +31,10 @@ const router = createBrowserRouter([
     path: "/thankyou",
     element: <Thankyou />,
   },
-  {
-    path: "/cobol",
-    element: <Cobol />,
-  },
+  // {
+  //   path: "/cobol",
+  //   element: <Cobol />,
+  // },
 ]);
 
 export default function App() {
