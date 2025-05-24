@@ -30,7 +30,7 @@ const Home = () => {
             <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
               MARKET SERVED
             </h1>
-            <div className="flex gap-8 flex-wrap">
+            <div className="flex gap-5 flex-wrap">
               {cards.map((card) => (
                 <ServiceCard
                   image={card.image}
