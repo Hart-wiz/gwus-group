@@ -3,11 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import your pages
 import Home from "./pages/Home.jsx";
-// import About from "./pages/About.jsx";
-import Contact from "./components/Contact.jsx";
-import Services from "./components/Services.jsx";
 import Thankyou from "./pages/Thankyou.jsx";
-// import Cobol from "./pages/Cobol.jsx";
+import Cobel from "./pages/Cobel.jsx";
+import GwusCobel from "./pages/GwusCobel.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,16 +17,20 @@ const router = createBrowserRouter([
     element: <Thankyou />,
   },
 
-  // {
-  //   path: "/cobol",
-  //   element: <Cobol />,
-  // },
+  {
+    path: "/cobel",
+    element: <Cobel />,
+  },
+  {
+    path: "/gwuscobel",
+    element: <GwusCobel />,
+  },
 ]);
 
 export default function App() {
   return (
     <>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const ImageSlider = ({ images, article }) => {
+const ImageSlider = ({ images, article, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -31,7 +31,7 @@ const ImageSlider = ({ images, article }) => {
       {/* Article text overlay */}
       {article && (
         <div className="absolute bottom-16 left-1/4 max-md:left-1/2 transform -translate-x-1/2 bg-black/60 text-white px-6 py-4 rounded-md max-w-xl  text-xl max-md:w-full">
-          <h2 className="Font-extrabold ">Featuring cobol OIL & GAS</h2>
+          <h2 className="Font-extrabold ">{title}</h2>
           <hr className="my-3 border-blue-400" />
           <p className="">{article[currentIndex]}</p>
         </div>

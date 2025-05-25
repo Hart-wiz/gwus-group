@@ -13,7 +13,7 @@ const Services = () => {
               image={card.image}
               title={card.title}
               text={card.about}
-              RN={card.RN}
+              RN={`RN: ${card.RN}`}
             />
           ))}
         </div>

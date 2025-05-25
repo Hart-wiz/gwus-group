@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import logo from "/logo.png";
 import menuIcon from "/menu.svg";
+import { Link } from "react-router-dom";
 
 const navItems = [
   { name: "Home", path: "/" },
   {
     name: "Our Companies ▼",
     dropdown: [
-      { name: "Cobel oil & Gas ltd", path: "#cobeloil" },
+      { name: "Cobel oil & Gas ltd", path: "/cobel" },
       { name: "GwusCobel ltd", path: "/gwuscobel" },
       { name: "GwusQatar ltd", path: "/gwusqatar" },
       { name: "Gwus Trading & Contracting", path: "/gwustrading" },
@@ -18,7 +19,7 @@ const navItems = [
   { name: "Contact", path: "#contact" },
 ];
 
-const Nav = () => {
+const Nav = ({ companyName, className }) => {
   const [menuShow, setMenuShow] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -32,8 +33,10 @@ const Nav = () => {
             alt="company logo"
             className="w-[80px] max-md:w-[60px]"
           />
+
           <h2 className="font-extrabold text-xl max-md:text-sm text-blue-900">
             GWUS GROUP OF COMPANIES
+            <p className={className}>{companyName}</p>
           </h2>
         </div>
 
@@ -49,15 +52,15 @@ const Nav = () => {
               >
                 <button className="hover:text-blue-800">{item.name}</button>
                 {dropdownOpen && (
-                  <ul className="absolute top-full left-0 bg-white shadow-lg border mt-2 rounded w-44 z-50">
+                  <ul className="absolute top-full left-0 bg-white shadow-lg border mt-0 rounded w-44 z-50">
                     {item.dropdown.map((sub) => (
                       <li key={sub.name}>
-                        <a
-                          href={sub.path}
+                        <Link
+                          to={sub.path}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100"
                         >
                           {sub.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

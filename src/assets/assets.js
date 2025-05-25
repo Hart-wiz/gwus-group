@@ -15,14 +15,14 @@ export const cards = [
     title: "GWUSCOBEL LTD",
     RN: "8344071",
     about:
-      "This company specializes in general construction services—including roads, drainage systems, culverts, and buildings—with a strong focus on structural craftsmanship and contract execution. It also operates in trading and distribution, dealing in vehicle and motorcycle spare parts, textiles, and general goods, with capabilities in import/export, installation, and fabrication services.",
+      "GWUSCOBEL LTD is into Real Estate Services, Survey Services and General Construction Services; Construction Of Road, Drainages, Culverts and buildings.",
   },
   {
     image: gwusqatar,
     title: "GWUSQATAR LIMITED",
     RN: "8322133",
     about:
-      "GWUSQATAR Limited specializes in the trading, sales, and distribution of vehicle and motorcycle spare parts, textiles, and other goods. The company also provides installation, fabrication, and import/export services, ensuring a comprehensive approach to meeting diverse market needs.",
+      "GWUSQATAR LIMITED is a trusted general trading and supply company specializing in the sales, distribution, and export of spare parts, textiles, electrical, and industrial goods, with services in installation, fabrication, and global procurement.",
   },
   {
     image: ct,

@@ -26,7 +26,11 @@ const Home = () => {
       <Nav />
       <main className="flex flex-col  bg-gray-300 ">
         <section className="relative">
-          <ImageSlider images={images} article={articles} />
+          <ImageSlider
+            images={images}
+            article={articles}
+            title="Featuring cobol OIL & GAS"
+          />
         </section>
         <div className="flex-row flex max-md:flex-col px-12 pb-9  justify-center max-md:items-center max-md:px-4">
           <section className=" text-left pt-20 " id="services">

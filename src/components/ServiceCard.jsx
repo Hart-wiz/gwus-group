@@ -16,7 +16,7 @@ const ServiceCard = ({ title, text, image, RN }) => {
       />
       <h2 className="text-md font-bold mb-2 text-black">
         {title}
-        <p className="text-blue-600 italic ">RN:{RN}</p>
+        <p className="text-blue-600 italic ">{RN}</p>
       </h2>
       <p className="text-gray-700 ">
         {isExpanded ? text : `${text.substring(0, 70)}...`}
