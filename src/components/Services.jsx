@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <div>
       <main className=" px-9 py-9 max-md:px-0 max-md:py-9">
-        <div className="flex gap-3 flex-wrap flex-row">
+        <div className="flex gap-5 flex-wrap flex-row">
           {cards.map((card) => (
             <ServiceCard
               image={card.image}

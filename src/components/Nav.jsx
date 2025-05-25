@@ -3,14 +3,24 @@ import logo from "/logo.png";
 import menuIcon from "/menu.svg";
 
 const navItems = [
-  { name: "HOME", path: "#" },
-  { name: "ABOUT", path: "#about" },
-  { name: "SERVICES", path: "#services" },
-  { name: "CONTACT", path: "#contact" },
+  { name: "Home", path: "/" },
+  {
+    name: "Our Companies ▼",
+    dropdown: [
+      { name: "Cobel oil & Gas ltd", path: "#cobeloil" },
+      { name: "GwusCobel ltd", path: "/gwuscobel" },
+      { name: "GwusQatar ltd", path: "/gwusqatar" },
+      { name: "Gwus Trading & Contracting", path: "/gwustrading" },
+    ],
+  },
+  { name: "About", path: "#about" },
+  { name: "Services", path: "#services" },
+  { name: "Contact", path: "#contact" },
 ];
 
 const Nav = () => {
   const [menuShow, setMenuShow] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <>
@@ -28,14 +38,39 @@ const Nav = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="max-md:hidden  text-blue-950 font-semibold flex gap-9 text-md z-50">
-          {navItems.map((item) => (
-            <li key={item.path} className="p-[9px] ">
-              <a href={item.path} className="hover:text-blue-800">
-                {item.name}
-              </a>
-            </li>
-          ))}
+        <ul className="max-md:hidden text-blue-950 font-semibold flex gap-6 text-md z-90 relative">
+          {navItems.map((item) =>
+            item.dropdown ? (
+              <li
+                key={item.name}
+                className="relative group p-[9px] bg-yellow-600 text-amber-50"
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <button className="hover:text-blue-800">{item.name}</button>
+                {dropdownOpen && (
+                  <ul className="absolute top-full left-0 bg-white shadow-lg border mt-2 rounded w-44 z-50">
+                    {item.dropdown.map((sub) => (
+                      <li key={sub.name}>
+                        <a
+                          href={sub.path}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100"
+                        >
+                          {sub.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ) : (
+              <li key={item.path} className="p-[9px]">
+                <a href={item.path} className="hover:text-blue-800">
+                  {item.name}
+                </a>
+              </li>
+            )
+          )}
         </ul>
 
         {/* Mobile Menu Toggle */}
@@ -48,31 +83,41 @@ const Nav = () => {
         </button>
       </div>
 
-      {/* Mobile Nav with Animation */}
+      {/* Mobile Nav with Dropdown */}
       <ul
-        className={`md:hidden fixed top-[80px] pt-9 z-50 left-0 w-full bg-black/80 h-1/2 text-center font-semibold text-gray-300 transform transition-all duration-300 ease-in-out ${
+        className={`md:hidden fixed top-[80px] pt-9 z-50 left-0 w-full bg-black/80 h-3/4 text-left pl-9 font-semibold text-gray-300 transform transition-all duration-300 ease-in-out ${
           menuShow
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-3 pointer-events-none"
         }`}
       >
-        {navItems.map((item) => (
-          <a
-            key={item.path}
-            href={item.path}
-            className="block hover:bg-blue-950 hover:text-white w-full py-3"
-            onClick={() => setMenuShow(false)}
-          >
-            {item.name}
-          </a>
-        ))}
+        {navItems.map((item) =>
+          item.dropdown ? (
+            <div key={item.name}>
+              <p className="py-3">{item.name}</p>
+              {item.dropdown.map((sub) => (
+                <a
+                  key={sub.name}
+                  href={sub.path}
+                  className="block hover:bg-blue-950 hover:text-white w-full py-2"
+                  onClick={() => setMenuShow(false)}
+                >
+                  {sub.name}
+                </a>
+              ))}
+            </div>
+          ) : (
+            <a
+              key={item.path}
+              href={item.path}
+              className="block hover:bg-blue-950 hover:text-white w-full py-3"
+              onClick={() => setMenuShow(false)}
+            >
+              {item.name}
+            </a>
+          )
+        )}
       </ul>
-
-      {/* Support Bar */}
-      {/* <div className="bg-blue-950 flex w-full py-5 justify-end px-30 max-md:px-7 text-sm">
-        <p className="text-white mr-2">NEED SUPPORT?</p>
-        <p className="text-yellow-300 font-semibold">+(974) 77045197</p>
-      </div> */}
     </>
   );
 };

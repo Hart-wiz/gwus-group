@@ -14,22 +14,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-  // {
-  //   path: "/about", // ⬅️ paths are lowercase by convention
-  //   element: <About />,
-  // },
   {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/services",
-    element: <Services />,
-  },
-  {
-    path: "/thankyou",
+    path: "/thankyou", // ⬅️ paths are lowercase by convention
     element: <Thankyou />,
   },
+
   // {
   //   path: "/cobol",
   //   element: <Cobol />,

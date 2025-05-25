@@ -8,7 +8,7 @@ const ServiceCard = ({ title, text, image, RN }) => {
   };
 
   return (
-    <div className="flex flex-col  w-[400px] h-auto p-3 shadow-lg rounded-lg bg-white text-sm gap-5 max-md:w-full  ">
+    <div className="flex flex-col  w-[350px] h-auto p-3 shadow-lg rounded-lg bg-white text-sm gap-0 max-md:w-full  ">
       <img
         src={image}
         alt="Oil Pump"
@@ -19,7 +19,7 @@ const ServiceCard = ({ title, text, image, RN }) => {
         <p className="text-blue-600 italic ">RN:{RN}</p>
       </h2>
       <p className="text-gray-700 ">
-        {isExpanded ? text : `${text.substring(0, 100)}...`}
+        {isExpanded ? text : `${text.substring(0, 70)}...`}
         <b
           onClick={toggleReadMore}
           className=" text-green-500 px-4 py-2 rounded  transition font-semibold cursor-pointer"

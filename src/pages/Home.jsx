@@ -31,7 +31,7 @@ const Home = () => {
         <div className="flex-row flex max-md:flex-col px-12 pb-9  justify-center max-md:items-center max-md:px-4">
           <section className=" text-left pt-20 " id="services">
             <h1 className="text-center font-semibold text-3xl  text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
-              MARKET SERVED
+              MARKETS SERVED
             </h1>
             <Services />
           </section>
