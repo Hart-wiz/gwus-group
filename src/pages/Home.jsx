@@ -12,6 +12,7 @@ import slide4 from "../assets/cobol4.jpg";
 import slide5 from "../assets/cobol5.jpg";
 import About from "../components/About";
 import Services from "../components/Services";
+import Contact from "../components/Contact";
 
 const Home = () => {
   const images = [slide3, slide4, slide5];
@@ -23,19 +24,20 @@ const Home = () => {
   return (
     <div className="text-black">
       <Nav />
-      <main className="flex flex-col ">
+      <main className="flex flex-col  bg-gray-300 ">
         <section className="relative">
           <ImageSlider images={images} article={articles} />
         </section>
         <div className="flex-row flex max-md:flex-col px-12 pb-9  justify-center max-md:items-center max-md:px-4">
-          <section className=" text-left pt-30 " id="services">
-            <h1 className="font-semibold text-3xl py-5 text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
+          <section className=" text-left pt-20 " id="services">
+            <h1 className="text-center font-semibold text-3xl  text-blue-950 max-md:px-3 max-md:text-2xl max-md:py-5">
               MARKET SERVED
             </h1>
             <Services />
           </section>
-          <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 pt-30">
-            <h1 className="font-semibold text-3xl py-5 text-blue-950  max-md:text-2xl max-md:py-5">
+          <hr className="border-3 w-full border-white/60 md:hidden" />
+          <section className="w-[350px] max-h:full max-md:flex max-md:flex-col max-md:items-center px-4 pt-30 max-md:pt-9">
+            <h1 className="font-semibold text-3xl py-5 text-blue-950  max-md:text-2xl max-md:py-5 ">
               WELCOME
             </h1>
             <div className=" w-[300px] flex flex-col max-md:items-center ">
@@ -55,8 +57,11 @@ const Home = () => {
           </section>
         </div>
       </main>
-      <div className="pt-30" id="about">
+      <div className="pt-20" id="about">
         <About />
+      </div>
+      <div id="contact" className="bg-blue-700/20 pt-20">
+        <Contact />
       </div>
       <section className="bg-blue-900 w-full h-auto  justify-between p-20  items-center font-bold text-white max-md:flex-col max-md:p-0  max-md:py-9  ">
         <h1 className="text-xl font-semibold lined mb-4 max-md:text-center max-md:mb-0.5  ">

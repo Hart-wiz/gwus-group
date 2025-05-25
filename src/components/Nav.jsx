@@ -69,10 +69,10 @@ const Nav = () => {
       </ul>
 
       {/* Support Bar */}
-      <div className="bg-blue-950 flex w-full py-5 justify-end px-30 max-md:px-7 text-sm">
+      {/* <div className="bg-blue-950 flex w-full py-5 justify-end px-30 max-md:px-7 text-sm">
         <p className="text-white mr-2">NEED SUPPORT?</p>
         <p className="text-yellow-300 font-semibold">+(974) 77045197</p>
-      </div>
+      </div> */}
     </>
   );
 };

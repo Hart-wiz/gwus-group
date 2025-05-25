@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Import your pages
 import Home from "./pages/Home.jsx";
 // import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
+import Contact from "./components/Contact.jsx";
 import Services from "./components/Services.jsx";
 import Thankyou from "./pages/Thankyou.jsx";
 // import Cobol from "./pages/Cobol.jsx";

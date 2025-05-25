@@ -1,14 +1,10 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-
-import MyLeafletMap from "../components/MyLeafletMap";
-import Form from "../components/Form";
+import MyLeafletMap from "./MyLeafletMap";
+import Form from "./Form";
 
 const Contact = () => {
   return (
     <div>
-      <Nav />
       <main className="p-9 text-black flex gap-6  max-md:items-center justify-center flex-row-reverse max-md:flex-col-reverse">
         <section>
           <h1 className="font-bold text-xl p-3">Find US Here </h1>
@@ -24,7 +20,6 @@ const Contact = () => {
           <Form />
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

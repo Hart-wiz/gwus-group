@@ -1,6 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
-import Footer from "./Footer";
+
 import ServiceCard from "./ServiceCard";
 import { cards } from "../assets/assets";
 
