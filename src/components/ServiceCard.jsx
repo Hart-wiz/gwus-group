@@ -11,7 +11,7 @@ const ServiceCard = ({ title, text, image, RN, link }) => {
     <>
       <a
         href={link}
-        className="flex flex-col  w-[350px] h-auto p-3 shadow-lg rounded-lg bg-white text-sm gap-0 max-md:w-full  "
+        className="flex flex-col  w-[350px] h-auto p-3 shadow-lg rounded-lg bg-white text-sm gap-0 max-md:w-full hover:bg-gray-300 "
       >
         <img
           src={image}

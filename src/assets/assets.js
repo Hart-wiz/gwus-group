@@ -29,6 +29,7 @@ export const cards = [
   {
     image: gwusqatar,
     title: "GWUSQATAR LIMITED",
+    link: "/gwusqatar",
     RN: "8322133",
     about:
       "GWUSQATAR LIMITED is a trusted general trading and supply company specializing in the sales, distribution, and export of spare parts, textiles, electrical, and industrial goods, with services in installation, fabrication, and global procurement.",

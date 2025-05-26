@@ -13,6 +13,8 @@ import CobelShutdown from "./pages/CobelShutdown.jsx";
 import CobelHse from "./pages/CobelHse.jsx";
 import GwusCobelProject from "./pages/GwusCobelProject.jsx";
 import GwusCobelConsult from "./pages/GwusCobelConsult.jsx";
+import GwusCobelAgency from "./pages/GwusCobelAgency.jsx";
+import GwusQatar from "./pages/GwusQatar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
   {
     path: "/gwuscobel/consult",
     element: <GwusCobelConsult />,
+  },
+  {
+    path: "/gwuscobel/agency",
+    element: <GwusCobelAgency />,
+  },
+  {
+    path: "/gwusqatar",
+    element: <GwusQatar />,
   },
 ]);
 

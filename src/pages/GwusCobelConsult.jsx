@@ -11,8 +11,21 @@ const GwusCobelConsult = () => {
       image: realestate,
       title: "Real Estate Consultancy Services",
       progress: 95,
-      article:
-        " Our Property Management encompasses a range of services to ensure the health and safety, efficiency, welfare, comfort and functionality of a building, its residents and employees and the ground it sits on. With over four decade's hands on experience in this field, we have proven track record in property/facility management that optimize resources for investors and occupiers across all types of properties. We source, secure and select tenants for vacant properties, negotiating and collecting rents and ensuring that tenants comply with the covenants contained in the respective contractual agreements. We also attend to issues such as maintenance, repairs and carrying out such other functions that enable the optimization of investor's returns. Managing complexity is our strength, as demonstrated by the scale and quality of our portfolio; our ability to manage large portfolios is underpinned by our human and technological infrastructure, size, and national spread which provide constant monitoring and control across the entire portfolio with real-time reporting of key indicators. We complement property management with facilities management, helping our clients realize savings in the operation and maintenance of their property portfolio while meeting their service standards and sustainability goals without compromising Quality, Health, Safety and Environment (QHSE)",
+      article: `With years of extensive experience in the industry, our teams of consultants offer advisory on vast areas of real estate to the delight of our clients (institutions, individuals, government and businesses.
+
+      We provide comprehensive property advice in the form of estate strategies, asset management planning and cost reduction initiatives.
+      
+      We undertake feasibility studies, options appraisals and business case work which underpin capital investment decisions and funding approvals in all areas. We add value through the planning and development process, as well as help structure Public Private Partnerships (PPP) or Joint Ventures (JV).
+      
+      Our lease advisory team specializes in minimizing lease exit costs. We have extensive experience of advising on strategic sourcing, Private Finance Initiative (PFI) solutions and PFI contract management. We are also adept at valuing public sector property.
+      
+      In addition, we provide professional services in the following areas to ensure realization of set goals within reasonable time frame and cost limit:
+      
+      - Representing owners of acquired properties on compensation assessment, verification and claims
+      - Representing Government or Corporate Organizations on all land acquisition and compensation matters
+      - Rendering relevant professional advice to individuals and corporate bodies on PUBLIC PRIVATE PARTNERSHIP relationships
+      - Receivership / Recovery Services on behalf of Clients in event of insolvency or liquidation
+      - Processing of Governor's consent on subsequent land transactions.`,
     },
   ];
 
