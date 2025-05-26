@@ -4,6 +4,8 @@ import cobol from "./cobol-ltd.jpg";
 import gwusqatar from "./gwusqatar.jpg";
 import offshore from "./offshore.jpg";
 import pipeline from "./pipeline.webp";
+import green from "./green.jpg";
+
 export const cards = [
   {
     image: oilpump,
@@ -50,10 +52,10 @@ export const cobelCards = [
       "Our Cross-Country Pipeline portfolio consists of long-term contract for installation of new pipeline of varying sizes from 6” to 30” and flow medium involving Engineering, Procurement, Installation and commissioning works. We meticulously handle associated dewatering, lagoon building and related Environmental requirements.  ",
   },
   {
-    image: pipeline,
+    image: green,
     title: "Brownfield and Greenfield ",
 
     about:
-      "Our Cross-Country Pipeline portfolio consists of long-term contract for installation of new pipeline of varying sizes from 6” to 30” and flow medium involving Engineering, Procurement, Installation and commissioning works. We meticulously handle associated dewatering, lagoon building and related Environmental requirements.  ",
+      "We deliver major Brownfield and Greenfield projects to help our customers to get the most out of their assets. we have delivered a wide range of brownfield and Greenfield Engineering, Procurement, Construction and Commissioning services to help our customers to maximize efficiency, maintain asset integrity and extend life for onshore and offshore assets. ",
   },
 ];

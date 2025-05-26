@@ -7,6 +7,10 @@ import Thankyou from "./pages/Thankyou.jsx";
 import Cobel from "./pages/Cobel.jsx";
 import GwusCobel from "./pages/GwusCobel.jsx";
 import CobelProject from "./pages/CobelProject.jsx";
+import CobelCallOff from "./pages/CobelCallOff.jsx";
+import CobelConstruction from "./pages/CobelConstruction.jsx";
+import CobelShutdown from "./pages/CobelShutdown.jsx";
+import CobelHse from "./pages/CobelHse.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +34,22 @@ const router = createBrowserRouter([
   {
     path: "/cobel/project",
     element: <CobelProject />,
+  },
+  {
+    path: "/cobel/calloff",
+    element: <CobelCallOff />,
+  },
+  {
+    path: "/cobel/construction",
+    element: <CobelConstruction />,
+  },
+  {
+    path: "/cobel/shutdown",
+    element: <CobelShutdown />,
+  },
+  {
+    path: "/cobel/hse",
+    element: <CobelHse />,
   },
 ]);
 

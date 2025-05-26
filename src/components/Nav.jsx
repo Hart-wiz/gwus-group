@@ -4,10 +4,11 @@ import menuIcon from "/menu.svg";
 import { Link } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "#" },
   {
     name: "Our Companies ▼",
     dropdown: [
+      { name: "GWUS GROUP", path: "/" },
       { name: "Cobel oil & Gas ltd", path: "/cobel" },
       { name: "GwusCobel ltd", path: "/gwuscobel" },
       { name: "GwusQatar ltd", path: "/gwusqatar" },

@@ -8,7 +8,7 @@ const CobelProjectCard = ({ image, title, article, progress }) => {
   };
   return (
     <div>
-      <div className="h-auto w-full text-justify flex text-black gap-4 max-md:flex-col max-md:w-screen ">
+      <div className="px-20 h-auto w-full text-justify flex text-black gap-4 max-md:flex-col max-md:w-screen max-md:px-0">
         <div className="  overflow-hidden max-md:w-screen">
           <img
             src={image}
@@ -16,7 +16,7 @@ const CobelProjectCard = ({ image, title, article, progress }) => {
             className="border-solid border-4 max-md:w-screen w-[500px]"
           />
         </div>
-        <article className="w-auto max-md:flex max-md:items-center max-md:flex-col">
+        <article className="w-auto max-md:flex max-md:items-center max-md:flex-col max-md:px-3">
           <h2 className="text-3xl font-mono max-md:text-lg max-md:text-center">
             {title}
           </h2>
@@ -31,7 +31,7 @@ const CobelProjectCard = ({ image, title, article, progress }) => {
             </b>
           </p>
 
-          <progress value={progress} max={100}>
+          <progress value={progress} max={100} className="self-start">
             complete
           </progress>
         </article>

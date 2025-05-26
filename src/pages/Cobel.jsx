@@ -15,6 +15,8 @@ import calloff from "../assets/calloff.jpg";
 import hse from "../assets/hse.jpg";
 import warning from "../assets/warning.jpg";
 import Footer from "../components/Footer";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
 const Cobel = () => {
   const images = [slide3, slide4, slide5];
@@ -33,22 +35,22 @@ const Cobel = () => {
     {
       image: calloff,
       title: "Call Off Services",
-      link: "/calloff",
+      link: "/cobel/calloff",
     },
     {
       image: construction,
       title: "Construction",
-      link: "/construction",
+      link: "/Cobel/construction",
     },
     {
       image: shutdown,
       title: "shutdown Projects",
-      link: "/shutdown",
+      link: "/Cobel/shutdown",
     },
     {
       image: hse,
       title: "HSE",
-      link: "/hse",
+      link: "/cobel/hse",
     },
   ];
 
@@ -80,7 +82,7 @@ const Cobel = () => {
           <h1 className="text-center font-thin text-4xl">OUR PROJECTS</h1>
           <div>
             <main className=" px-9 py-9 max-md:px-0 max-md:py-9">
-              <div className="flex gap-5 flex-wrap flex-row">
+              <div className="flex gap-5 flex-wrap flex-row justify-center">
                 {cobelCards.map((card) => (
                   <ServiceCard
                     image={card.image}
@@ -92,6 +94,12 @@ const Cobel = () => {
             </main>
           </div>
         </section>
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
       <Footer />
     </div>
