@@ -25,8 +25,8 @@ const Nav = ({ companyName, className }) => {
 
   return (
     <>
-      {/* Sticky Navigation Header */}
-      <div className="sticky top-0 z-50 bg-white/60 backdrop-blur-sm h-20 max-md:h-25 max-md:px-3 px-30 flex justify-between items-center shadow-sm">
+      {/* fixed Navigation Header */}
+      <div className="fixed w-full top-0 z-50 bg-white/60 backdrop-blur-sm h-20 max-md:h-25 max-md:px-3 px-30 flex justify-between items-center shadow-sm">
         <div className="flex items-center text-black gap-3">
           <img
             src={logo}

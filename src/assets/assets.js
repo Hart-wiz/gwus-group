@@ -2,6 +2,8 @@ import oilpump from "./oilpump.jpg";
 import ct from "./ct.jpg";
 import cobol from "./cobol-ltd.jpg";
 import gwusqatar from "./gwusqatar.jpg";
+import offshore from "./offshore.jpg";
+import pipeline from "./pipeline.webp";
 export const cards = [
   {
     image: oilpump,
@@ -30,5 +32,28 @@ export const cards = [
     RN: "commercial REG NO: 212951",
     about:
       "GWUS Trading and Contracting operates across five core areas: trading in quality building materials and equipment, distributing diverse food products, executing general contracting projects, delivering health and safety compliance services, and managing lifting operations with certified equipment.",
+  },
+];
+export const cobelCards = [
+  {
+    image: offshore,
+    title: "Offshore and Onshore Projects ",
+
+    about:
+      "COBEL Oil & Gas is well established multi-disciplined Onshore and Offshore EPIC contracting company that has delivered EPIC projects. COBEL Oil & Gas have a capable team of experienced Project Management personnel and Construction Management personnel overseeing Engineering, Procurement, Construction and Commissioning of Projects. ",
+  },
+  {
+    image: pipeline,
+    title: "Cross Country Pipeline ",
+
+    about:
+      "Our Cross-Country Pipeline portfolio consists of long-term contract for installation of new pipeline of varying sizes from 6” to 30” and flow medium involving Engineering, Procurement, Installation and commissioning works. We meticulously handle associated dewatering, lagoon building and related Environmental requirements.  ",
+  },
+  {
+    image: pipeline,
+    title: "Brownfield and Greenfield ",
+
+    about:
+      "Our Cross-Country Pipeline portfolio consists of long-term contract for installation of new pipeline of varying sizes from 6” to 30” and flow medium involving Engineering, Procurement, Installation and commissioning works. We meticulously handle associated dewatering, lagoon building and related Environmental requirements.  ",
   },
 ];

@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx";
 import Thankyou from "./pages/Thankyou.jsx";
 import Cobel from "./pages/Cobel.jsx";
 import GwusCobel from "./pages/GwusCobel.jsx";
+import CobelProject from "./pages/CobelProject.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/gwuscobel",
     element: <GwusCobel />,
+  },
+
+  {
+    path: "/cobel/project",
+    element: <CobelProject />,
   },
 ]);
 
