@@ -8,7 +8,7 @@ import slide5 from "../assets/cobol5.jpg";
 import ServiceCard from "../components/ServiceCard";
 import { cobelCards } from "../assets/assets";
 import ImageCard from "../components/ImageCard";
-import project from "../assets/epic-projects.jpg";
+import project from "../assets/epic-projects.png";
 import construction from "../assets/construction.png";
 import shutdown from "../assets/shutdown.webp";
 import calloff from "../assets/calloff.jpg";

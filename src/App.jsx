@@ -11,6 +11,8 @@ import CobelCallOff from "./pages/CobelCallOff.jsx";
 import CobelConstruction from "./pages/CobelConstruction.jsx";
 import CobelShutdown from "./pages/CobelShutdown.jsx";
 import CobelHse from "./pages/CobelHse.jsx";
+import GwusCobelProject from "./pages/GwusCobelProject.jsx";
+import GwusCobelConsult from "./pages/GwusCobelConsult.jsx";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
   {
     path: "/cobel/hse",
     element: <CobelHse />,
+  },
+  {
+    path: "/gwuscobel/project",
+    element: <GwusCobelProject />,
+  },
+  {
+    path: "/gwuscobel/consult",
+    element: <GwusCobelConsult />,
   },
 ]);
 

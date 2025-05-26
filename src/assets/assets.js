@@ -5,11 +5,15 @@ import gwusqatar from "./gwusqatar.jpg";
 import offshore from "./offshore.jpg";
 import pipeline from "./pipeline.webp";
 import green from "./green.jpg";
+import slide3 from "../assets/realestate3.webp";
+import slide4 from "../assets/realestate4.webp";
+import slide5 from "../assets/realestate5.webp";
 
 export const cards = [
   {
     image: oilpump,
     title: "COBEL OIL & GAS SERVICES LIMITED",
+    link: "/cobel",
     RN: "8337211",
     about:
       "COBEL Oil & Gas Services Limited is a Nigerian company offering expert solutions in engineering, construction, real estate, surveying, maintenance, environmental assessments, health & safety, and manpower supply—driven by quality, innovation, and reliability.",
@@ -17,6 +21,7 @@ export const cards = [
   {
     image: cobol,
     title: "GWUSCOBEL LTD",
+    link: "/gwuscobel",
     RN: "8344071",
     about:
       "GWUSCOBEL LTD is into Real Estate Services, Survey Services and General Construction Services; Construction Of Road, Drainages, Culverts and buildings.",
@@ -57,5 +62,28 @@ export const cobelCards = [
 
     about:
       "We deliver major Brownfield and Greenfield projects to help our customers to get the most out of their assets. we have delivered a wide range of brownfield and Greenfield Engineering, Procurement, Construction and Commissioning services to help our customers to maximize efficiency, maintain asset integrity and extend life for onshore and offshore assets. ",
+  },
+];
+export const gwusCobelCards = [
+  {
+    image: slide4,
+    title: "Facility and Property Management ",
+
+    about:
+      "Our Property Management encompasses a range of services to ensure the health and safety, efficiency, welfare, comfort and functionality of a building, its residents and employees and the ground it sits on. With over four decade's hands on experience in this field, we have proven track record in property/facility management that optimize resources for investors and occupiers across all types of properties.  ",
+  },
+  {
+    image: slide3,
+    title: "Project Development ",
+
+    about:
+      "From Architects, Quantity Surveyors, Structural, Civil, Mechanical and Electrical Engineers, Project Managers to Financial Analyst and Building Technologists, our consultants deliver bespoke advisory to help clients with their property needs. There is a vast collection of industry fact sheets and database that helps in finding solutions to the needs of our clients.  ",
+  },
+  {
+    image: slide5,
+    title: "Quality feasibility studies",
+
+    about:
+      "We undertake feasibility studies, options appraisals and business case work which underpin capital investment decisions and funding approvals in all areas. We add value through the planning and development process, as well as help structure Public Private Partnerships (PPP) or Joint Ventures (JV). ",
   },
 ];

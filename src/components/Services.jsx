@@ -14,6 +14,7 @@ const Services = () => {
               title={card.title}
               text={card.about}
               RN={`RN: ${card.RN}`}
+              link={card.link}
             />
           ))}
         </div>
