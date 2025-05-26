@@ -12,8 +12,9 @@ import project from "../assets/epic-projects.jpg";
 import construction from "../assets/construction.png";
 import shutdown from "../assets/shutdown.webp";
 import calloff from "../assets/calloff.jpg";
+import hse from "../assets/hse.jpg";
 import warning from "../assets/warning.jpg";
-import workshop from "../assets/workshop.jpg";
+import Footer from "../components/Footer";
 
 const Cobel = () => {
   const images = [slide3, slide4, slide5];
@@ -39,6 +40,16 @@ const Cobel = () => {
       title: "Construction",
       link: "/construction",
     },
+    {
+      image: shutdown,
+      title: "shutdown Projects",
+      link: "/shutdown",
+    },
+    {
+      image: hse,
+      title: "HSE",
+      link: "/hse",
+    },
   ];
 
   return (
@@ -57,7 +68,7 @@ const Cobel = () => {
       <section className="my-10" id="services">
         <section className=" ">
           <h2 className="text-4xl text-center font-thin p-9">OUR BUSINESS</h2>
-          <div className="flex gap-9 justify-center flex-wrap flex-row">
+          <div className="flex gap-9 justify-center flex-wrap flex-row ">
             {cobelserve.map((card) => (
               <Link to={card.link}>
                 <ImageCard cardImage={card.image} title={card.title} />
@@ -82,6 +93,7 @@ const Cobel = () => {
           </div>
         </section>
       </section>
+      <Footer />
     </div>
   );
 };
