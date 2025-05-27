@@ -22,7 +22,7 @@ const Home = () => {
     "COBEL Oil & Gas is committed to having an incident free workplace, providing safe environment to those involved in or affected by our activities. Effective health, safety and environmental leadership is essential in everything that we do. ",
   ];
   return (
-    <div className="text-black">
+    <div className="text-black bg-gray-300">
       <Nav />
       <main className="flex flex-col  bg-gray-300 ">
         <section className="relative">

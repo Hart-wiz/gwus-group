@@ -1,52 +1,60 @@
 import React from "react";
 import Nav from "../components/Nav";
 import ImageSlider from "../components/ImageSlider";
-import slide3 from "../assets/realestate3.webp";
-import slide4 from "../assets/realestate4.webp";
-import slide5 from "../assets/realestate5.webp";
-import realestate from "../assets/realestate.jpg";
+import slide3 from "../assets/gwusqatar.webp";
+import slide4 from "../assets/gwusqatar3.webp";
 import agency from "../assets/agency.jpg";
-import consult from "../assets/consult.jpg";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import { Link } from "react-router-dom";
-import ImageCard from "../components/ImageCard";
 import ServiceCard from "../components/ServiceCard";
 import { gwusCobelCards } from "../assets/assets";
+import IE from "../assets/IE-icon.png";
+import install from "../assets/installation.png";
+import supply from "../assets/supply.png";
+import distribute from "../assets/distribute.png";
+import rep from "../assets/rep.png";
+import QatarCard from "../components/QatarCard";
 
 const GwusQatar = () => {
-  const images = [slide3, slide4, slide5];
+  const images = [slide3, slide4, slide3];
   const articles = [
-    "With 40+ years of experience, we deliver proven, efficient property and facility management solutions for all real estate types.",
-    "Our expert team—spanning architects to engineers and analysts—provides tailored property advisory to meet every client’s needs.",
-    "Ou team of consultants provides personalized solutions to acquisitions, ownership, valuation, development, occupations and disposal of properties. ",
+    "GWUSQATAR LIMITED is a diversified trading company engaged in the import, export, sales, and distribution of general goods, including vehicle and motorcycle spare parts, textiles, electrical, scientific, and industrial products",
+    "The company also offers installation, fabrication, and acts as a merchant, agent, and manufacturer’s representative across multiple sectors.",
+    "The company also offers installation, fabrication, and acts as a merchant, agent, and manufacturer’s representative across multiple sectors.",
   ];
-  const title = ["REAL-ESTATE & CONSTRUCTION"];
+  const title = ["GWUSQATAR LIMITED"];
 
   const gwusCobelServe = [
     {
-      image: realestate,
-      title: "Project Development",
-      link: "/gwuscobel/project",
+      image: IE,
+      title: "Import & Export Of General Goods And Services",
     },
     {
-      image: consult,
-      title: "Real Estate Consultancy ",
-      link: "/gwuscobel/consult",
+      image: install,
+      title: "Installation Services & Fabrication ",
+    },
+    {
+      image: supply,
+      title: "Supplies ",
+    },
+    {
+      image: rep,
+      title: "  Merchants & Manufacturers Representatives, ",
+    },
+    {
+      image: distribute,
+      title: "Sales And Distribution Of General Goods And Services ",
     },
     {
       image: agency,
       title: "Agency Services",
-      link: "/gwusCobel/agency",
     },
   ];
   return (
     <div>
-      <Nav
-        companyName="GwusCobel Nigeria LTD"
-        className="text-sm text-yellow-700"
-      />
+      <Nav companyName="GwusQatar Limited" className="text-sm text-gray-700" />
       <section className="relative">
         <ImageSlider images={images} article={articles} title={title} />
       </section>
@@ -54,37 +62,32 @@ const GwusQatar = () => {
         <h2 className="text-4xl text-center font-thin p-9 text-black">
           OUR BUSINESS
         </h2>
-        <div className="flex gap-20 justify-center  flex-wrap flex-row max-md:gap-10 ">
+        <div className="flex gap-0 justify-center  flex-wrap flex-row max-md:gap-10 ">
           {gwusCobelServe.map((card) => (
             <Link to={card.link}>
-              <ImageCard cardImage={card.image} title={card.title} />
+              <QatarCard
+                image={card.image}
+                title={card.title}
+                article={card.article}
+              />
             </Link>
           ))}
         </div>
       </section>
       <section className="my-15">
-        <h1 className="text-center font-thin text-4xl text-black">
-          OUR PROJECTS
-        </h1>
-        <div>
-          <main className=" px-9 py-9 max-md:px-0 max-md:py-9">
-            <div className="flex gap-5 flex-wrap flex-row justify-center">
-              {gwusCobelCards.map((card) => (
-                <ServiceCard
-                  image={card.image}
-                  title={card.title}
-                  text={card.about}
-                />
-              ))}
-            </div>
-          </main>
+        <div className="bg-black">
+          <p className="text-green-500 text-center max-md:px-5 max-md:text-justify max-md:text-lg text-4xl p-9">
+            Dealers In All Articles Of Merchandise Including Electrical,
+            Domestic, Scientific, Industrial Goods And General Goods.
+          </p>
         </div>
       </section>
 
       <div id="about">
         <About />
       </div>
-      <div id="contact">
+
+      <div id="contact" className="bg-gray-800/30">
         <Contact />
       </div>
       <Footer />
