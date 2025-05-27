@@ -15,6 +15,9 @@ import GwusCobelProject from "./pages/GwusCobelProject.jsx";
 import GwusCobelConsult from "./pages/GwusCobelConsult.jsx";
 import GwusCobelAgency from "./pages/GwusCobelAgency.jsx";
 import GwusQatar from "./pages/GwusQatar.jsx";
+import GwusTrading from "./pages/GwusTrading.jsx";
+import GwusTradingOilProduct from "./pages/GwusTradingOilProduct.jsx";
+import GwusTradingbuilding from "./pages/GwusTradingbuilding.jsx";
 
 const router = createBrowserRouter([
   {
@@ -70,6 +73,22 @@ const router = createBrowserRouter([
   {
     path: "/gwusqatar",
     element: <GwusQatar />,
+  },
+  {
+    path: "/gwustrading",
+    element: <GwusTrading />,
+  },
+  {
+    path: "/gwustrading/oilproduct",
+    element: <GwusTradingOilProduct />,
+  },
+  {
+    path: "/gwustrading/building",
+    element: <GwusTradingbuilding />,
+  },
+  {
+    path: "/gwustrading/general",
+    element: <GwusTradingOilProduct />,
   },
 ]);
 

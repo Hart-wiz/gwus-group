@@ -8,8 +8,6 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import About from "../components/About";
 import { Link } from "react-router-dom";
-import ServiceCard from "../components/ServiceCard";
-import { gwusCobelCards } from "../assets/assets";
 import IE from "../assets/IE-icon.png";
 import install from "../assets/installation.png";
 import supply from "../assets/supply.png";
