@@ -3,7 +3,6 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import slide4 from "../assets/realestate4.webp";
 import realestate from "../assets/property.jpg";
-import survey from "../assets/survey.jpg";
 import CobelProjectCard from "../components/CobelProjectCard";
 
 const GwusCobelAgency = () => {
@@ -16,7 +15,7 @@ const GwusCobelAgency = () => {
         "No matter the dynamics, when it comes to letting, buying or selling of properties of any kind, we are a trusted ally. We are experienced well enough to transact or advice across various kinds of properties such as flats, houses, land and commercial property for sale and rent in Nigeria. Our experts are available and ready to meet your needs. We are always poised to offer you the benefits of our strong market knowledge. Our in-house experts will guide you all the way through transaction conceptualization to completion. ",
     },
     {
-      image: survey,
+      image: realestate,
       title: "Survey Services ",
       progress: 95,
       article:

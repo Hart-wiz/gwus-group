@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
-
+import front from "../assets/gwustrade-slide.webp";
 import Footer from "../components/Footer";
 import oilproduct from "../assets/oilproduct.jpg";
 const GwusTradingOilProduct = () => {
@@ -33,11 +33,7 @@ const GwusTradingOilProduct = () => {
         className="text-sm text-blue-700"
       />
       <main>
-        <img
-          src={oilproduct}
-          alt=""
-          className="h-90 w-screen px-9 max-md:px-0"
-        />
+        <img src={oilproduct} alt="" className="h-90 w-screen" />
         <h1 className="text-black text-center font-mono text-3xl py-6 flex flex-row justify-center">
           <a
             href="/gwusTrading"
