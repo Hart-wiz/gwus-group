@@ -13,7 +13,7 @@ import About from "../components/About";
 import { Link } from "react-router-dom";
 import ImageCard from "../components/ImageCard";
 import ServiceCard from "../components/ServiceCard";
-import { gwusCobelCards } from "../assets/assets";
+import { gwusTrade } from "../assets/assets";
 
 const GwusTrading = () => {
   const images = [slide3, slide4, slide5];
@@ -69,12 +69,8 @@ const GwusTrading = () => {
         <div>
           <main className=" px-9 py-9 max-md:px-0 max-md:py-9">
             <div className="flex gap-5 flex-wrap flex-row justify-center">
-              {gwusCobelCards.map((card) => (
-                <ServiceCard
-                  image={card.image}
-                  title={card.title}
-                  text={card.about}
-                />
+              {gwusTrade.map((card) => (
+                <ServiceCard image={card.image} text={card.about} />
               ))}
             </div>
           </main>

@@ -18,6 +18,7 @@ import GwusQatar from "./pages/GwusQatar.jsx";
 import GwusTrading from "./pages/GwusTrading.jsx";
 import GwusTradingOilProduct from "./pages/GwusTradingOilProduct.jsx";
 import GwusTradingbuilding from "./pages/GwusTradingbuilding.jsx";
+import GwusTradinggeneral from "./pages/GwusTradinggeneral.jsx";
 
 const router = createBrowserRouter([
   {
@@ -88,7 +89,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/gwustrading/general",
-    element: <GwusTradingOilProduct />,
+    element: <GwusTradinggeneral />,
   },
 ]);
 
