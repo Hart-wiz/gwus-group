@@ -19,7 +19,7 @@ export default function MyLeafletMap() {
           </Marker>
         </MapContainer>
         <p>
-          International office: <b>Doha, Qatar.</b>{" "}
+          International office: <b>Salwa Road, Doha, Qatar.</b>{" "}
         </p>
       </div>
       <div>
@@ -37,7 +37,7 @@ export default function MyLeafletMap() {
           </Marker>
         </MapContainer>
         <p>
-          Nigerian Office: <b>Umuahia, Nigeria</b>{" "}
+          Nigerian Office: <b>Ubakala rd, Umuahia, Nigeria</b>
         </p>
       </div>
     </div>
