@@ -39,7 +39,7 @@ const GwusTradinggeneral = () => {
         <img
           src={front}
           alt="General Contracting Banner"
-          className="w-full h-auto"
+          className="w-full h-90 px-20"
         />
         <h1 className="text-center font-mono text-3xl py-6 flex justify-center items-center">
           <a
