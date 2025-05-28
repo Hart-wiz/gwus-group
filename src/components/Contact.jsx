@@ -11,9 +11,6 @@ const Contact = () => {
           <div className="w-xl max-md:w-screen px-3 z-0">
             <MyLeafletMap />
           </div>
-          <div>
-            <h1 className="p-3">Office Address</h1>
-          </div>
         </section>
         <section className="w-full">
           <h1 className="font-bold text-xl py-3">Contact Us </h1>
