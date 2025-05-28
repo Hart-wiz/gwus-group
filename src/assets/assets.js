@@ -8,6 +8,9 @@ import green from "./green.jpg";
 import slide3 from "../assets/realestate3.webp";
 import slide4 from "../assets/realestate4.webp";
 import slide5 from "../assets/realestate5.webp";
+import electrical from "../assets/electrical.jpg";
+import interior from "../assets/interior.jpg";
+import landscape from "../assets/landscape.jpg";
 
 export const cards = [
   {
@@ -86,5 +89,22 @@ export const gwusCobelCards = [
 
     about:
       "We undertake feasibility studies, options appraisals and business case work which underpin capital investment decisions and funding approvals in all areas. We add value through the planning and development process, as well as help structure Public Private Partnerships (PPP) or Joint Ventures (JV). ",
+  },
+];
+export const gwusTradeCards = [
+  {
+    image: electrical,
+    about:
+      "ELECTRO-MECHANICAL: Electrical Power Infrastructure - Low and Medium Voltage Installations, Emergency Power System Installations - Standby Generator Sets, UPS, CBS",
+  },
+  {
+    image: interior,
+    about:
+      "INTERIOR FIT-OUT : Marble and Stone Works - Flooring, Wall Cladding, Waterjet Design ... ",
+  },
+  {
+    image: landscape,
+    about:
+      "	 LANDSCAPE DEVELOPMENT: 	Gardens and Parks, Avenue Planting, Sport Fields ...  ",
   },
 ];
