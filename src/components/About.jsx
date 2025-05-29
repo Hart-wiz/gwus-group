@@ -26,6 +26,32 @@ const About = () => {
               subsidiaries operate in key industries that drive both regional
               and global progress.
             </p>
+            <div className="flex gap-30font-bold italic gap-20 w-4 ">
+              <ul className="flex flex-col gap-4">
+                <li className="flex  items-center">
+                  <img src={check} alt="" />
+                  Quality
+                </li>
+                <li className="flex items-center">
+                  <img src={check} alt="" />
+                  Service
+                </li>
+                <li className="flex items-center">
+                  <img src={check} alt="" />
+                  Integrity
+                </li>
+              </ul>
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-center">
+                  <img src={check} alt="" />
+                  Innovation
+                </li>
+                <li className="flex items-center">
+                  <img src={check} alt="" />
+                  Efficiency
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <section className="w-[400px] m-8 max-md:w-[300px] ">
@@ -34,28 +60,42 @@ const About = () => {
           </h2>
           <ul className="list-disc space-y-5">
             <li>
-              <b className="text-blue-900">COBEL Oil and Gas Limited –</b> A
-              dynamic energy company engaged in exploration, production, and
-              distribution within the oil and gas sector.
+              <b className="text-blue-900">COBEL Oil and Gas Limited –</b>COBEL
+              Oil & Gas is a trusted EPIC contractor delivering onshore and
+              offshore engineering, procurement, construction, and commissioning
+              projects. With an experienced in-house team, we offer end-to-end
+              solutions—from platform upgrades and brownfield modifications
+              offshore to plant improvements, civil works, and commissioning
+              onshore.
             </li>
             <li>
-              <b className="text-blue-900">GWUSQatar Limited – </b>A trusted
-              player in international contracting, logistics, and engineering
-              services based in Qatar.
+              <b className="text-blue-900">GWUSQatar Limited – </b>GWUSQATAR
+              LIMITED is a diversified company engaged in general trading,
+              import and export, and the sales and distribution of vehicles,
+              motorcycles, spare parts, textiles, and a wide range of goods. We
+              also offer installation, fabrication, and supply services, acting
+              as merchants, manufacturers’ representatives, agents, and dealers
+              in electrical, domestic, scientific, industrial, and general
+              merchandise.
             </li>
             <li>
-              <b className="text-blue-900"> GWUSCobel Limited – </b>A strategic
-              joint venture focused on infrastructure development and energy
-              services.
+              <b className="text-blue-900"> GWUSCobel Limited – </b>GWUSCOBEL
+              LTD is into Real Estate Services, Survey Services and General
+              Construction Services; Construction of Road, Drainages, Culverts
+              and buildings.
             </li>
             <li>
-              <b className="text-blue-900">GWUS Trading and Contracting –</b> A
-              leading provider of construction, procurement, and general
-              contracting solutions.
+              <b className="text-blue-900">GWUS Trading and Contracting –</b>
+              GWUS provides trading services in oilfield products and building
+              materials, serving both the oil & gas and construction sectors. We
+              also specialize in engineering staffing, supplying qualified
+              professionals—such as civil, mechanical, and electrical engineers,
+              HSE officers, QA/QC specialists, and riggers—to support major
+              projects across Qatar.
             </li>
           </ul>
         </section>
-        <section className="w-[400px] m-8  space-y-5 max-md:w-[300px] text-justify">
+        {/* <section className="w-[400px] m-8  space-y-5 max-md:w-[300px] text-justify">
           <div>
             <h1 className=" font-bold text-xl mb-4 text-blue-900">Mission</h1>
             <p>
@@ -94,7 +134,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
