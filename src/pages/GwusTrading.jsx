@@ -44,7 +44,7 @@ const GwusTrading = () => {
     {
       image: staff,
       title: "Staffing Services",
-      link: "/gwustrading/staffing",
+      link: "/gwustrading/staff",
     },
   ];
   return (

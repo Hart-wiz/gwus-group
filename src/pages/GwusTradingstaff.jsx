@@ -1,34 +1,24 @@
 import React from "react";
 import Nav from "../components/Nav";
-import front from "../assets/generalcontract.webp";
+import front from "../assets/staffingbg.webp";
 import Footer from "../components/Footer";
 
 const GwusTradingstaff = () => {
   const data = [
     {
-      aspect: "CIVIL CONSTRUCTION",
+      aspect: "GWUS TRADING AND CONTRACTING",
       details:
-        "Earthworks - Excavation, Shoring, Dewatering ● Piling Works ● Concreting Works ● Structural Steel - Built-up Structural Elements, Steel Framing, Standingseam Roofing System, Structural Steel Bridge ● Structural Strengthening - Concrete Jacketing Works, (CFRP) Carbon Fibre Reinforced Polymer System ● Waterproofing Systems - Torch-Applied Membrane, Inverted Roofing System, Cementitous System ● Concrete Repairs ● Infrastructure and Roadworks",
+        "At Gwus Trading and Contracting, we specialize in engineering staffing services, helping businesses in Qatar find highly qualified engineers and technical professionals. As a trusted engineering staffing agency, we provide top-tier staffing solutions to support construction, oil & gas, and infrastructure projects.",
     },
     {
-      aspect: "ELECTRO-MECHANICAL",
+      aspect: "EXPERT ENGINEERS, READY TO GO",
       details:
-        "Electrical Power Infrastructure - Low and Medium Voltage Installations ● Emergency Power System Installations - Standby Generator Sets, UPS, CBS ● MOI Approved CCTV & Access Control Systems ● QCDD Approved Fire Alarm & Voice Evacuation Systems ● ELV Installations - PA System, IPTV, Audio-Visual, Queuing, Lighting, Parking ● Nurse Call, Master Clock, AFILS, BMS ● IT Systems - IP Phones, Data, WiFi ● HVAC Systems ● Fire Fighting - Sprinkler, Hose, Foam, Clean Agent ● Plumbing - Drainage, Treatment Systems, Water Supply ● Irrigation Systems ● Water Features ● Tier-3 & 4 Data Center Systems",
+        "Hiring skilled engineers is critical for successful project execution. Our engineering staffing services ensure that businesses have access to experienced professionals who meet industry requirements.",
     },
     {
-      aspect: "INTERIOR FIT-OUT",
+      aspect: "ENGINEERING STAFFING ",
       details:
-        "Marble and Stone Works ● Wooden Works ● Built-in Works ● Interior Finishes ● Special Interior Finishes",
-    },
-    {
-      aspect: "LANDSCAPE DEVELOPMENT",
-      details:
-        "Gardens and Parks ● Hard Landscaping ● Soft Landscaping ● Irrigation Systems ● Landscaping and Irrigation Maintenance ● Tensile Structures ● Water Features ● Street Furniture ● Urban Art Installations ● Special Finishes ● Roadworks and Infrastructure Works",
-    },
-    {
-      aspect: "STAFFING SERVICES",
-      details:
-        "Engineering staffing services for construction, oil & gas, and infrastructure ● Civil Engineers ● Mechanical Engineers ● Electrical Engineers ● HSE Officers ● QA/QC Specialists ● Lifting Supervisors / Riggers",
+        "Civil engineers ●	Electrical engineers,●	Mechanical engineers  ●	HSE officers/Engineers  ●	QA/QC specialists  ●	Lifting Supervisor / Riggers",
     },
   ];
 
@@ -48,7 +38,7 @@ const GwusTradingstaff = () => {
           >
             ⇦ Back
           </a>
-          General Contracting
+          STAFFING SERVICES
         </h1>
 
         <section className="m-9 max-md:m-3">
