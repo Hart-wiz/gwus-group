@@ -4,7 +4,7 @@ import front from "../assets/generalcontract.webp";
 import Footer from "../components/Footer";
 import staffing from "../assets/staffingbg.webp";
 
-const GwusTradingstaffing = () => {
+const GwusTradingStaffing = () => {
   const data = [
     {
       aspect: "STAFFING SERVICES",
@@ -70,4 +70,4 @@ const GwusTradingstaffing = () => {
   );
 };
 
-export default GwusTradingstaffing;
+export default GwusTradingStaffing;
