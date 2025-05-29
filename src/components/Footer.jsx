@@ -29,7 +29,7 @@ const Footer = () => {
             Emmanuel's house by Trinity College Road, Umuizu Afara, off Uchenna
             Bus stop, Ubakala Road, Umuahia, Abia State, Nigeria.
             <br />
-            Phone number: ±2348129522650, ±2349065910188.
+            Phone number: +2347020514858, +2348129522650, +2349065910188,
           </p>
         </div>
         <div>

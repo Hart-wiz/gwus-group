@@ -7,6 +7,7 @@ import slide5 from "../assets/gwustrade-slide4.webp";
 import oilproduct from "../assets/oilfield-icon.jpg";
 import building from "../assets/build-icon.jpg";
 import general from "../assets/general-contracting-icon.jpg";
+import staff from "../assets/staff.png";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import About from "../components/About";
@@ -40,6 +41,11 @@ const GwusTrading = () => {
       title: "General Contracting",
       link: "/gwustrading/general",
     },
+    {
+      image: staff,
+      title: "Staffing Services",
+      link: "/gwustrading/staffing",
+    },
   ];
   return (
     <div>
@@ -54,7 +60,7 @@ const GwusTrading = () => {
         <h2 className="text-4xl text-center font-thin p-9 text-black">
           OUR BUSINESS
         </h2>
-        <div className="flex gap-20 justify-center  flex-wrap flex-row max-md:gap-10 ">
+        <div className="flex justify-center gap-9 px-12 flex-wrap flex-row max-md:gap-10">
           {gwusCobelServe.map((card) => (
             <Link to={card.link}>
               <ImageCard cardImage={card.image} title={card.title} />
