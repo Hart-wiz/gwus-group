@@ -1,42 +1,54 @@
 import React from "react";
 import Nav from "../components/Nav";
-import front from "../assets/generalcontract.webp";
+import front from "../assets/gwustrade-slide3.webp";
 import Footer from "../components/Footer";
-import staffing from "../assets/staffingbg.webp";
 
 const GwusTradingStaffing = () => {
   const data = [
     {
-      aspect: "STAFFING SERVICES",
+      aspect: "Product Range",
       details:
-        "Engineering staffing services for construction, oil & gas, and infrastructure ● Civil Engineers ● Mechanical Engineers ● Electrical Engineers ● HSE Officers ● QA/QC Specialists ● Lifting Supervisors / Riggers",
+        " Gwus trading services encompass a broad array of building materials, including construction equipment, raw materials, finishing products, and more, catering to the needs of the construction industry.",
+    },
+    {
+      aspect: "Project Support",
+      details:
+        "The company assists clients in choosing suitable building materials for construction projects, taking into account factors such as project specifications, budget constraints, and timelines.",
+    },
+    {
+      aspect: "Logistics and Delivery",
+      details:
+        "The company manages logistics and delivery processes to transport building materials to construction sites promptly and efficiently.",
+    },
+    {
+      aspect: "Quality Control",
+      details:
+        "Gwus Trading  may implement quality control and assurance measures to guarantee the durability, safety, and performance of building materials.",
     },
   ];
-
   return (
     <div className="text-black">
-      <Nav companyName="Gwus Trading & Contracting" />
+      <Nav
+        companyName="Gwus Trading & Contracting"
+        className="text-sm text-blue-700"
+      />
       <main>
-        <img
-          src={staffing}
-          alt="General Contracting Banner"
-          className="w-full h-90 px-20"
-        />
-        <h1 className="text-center font-mono text-3xl py-6 flex justify-center items-center">
+        <img src={front} alt="" className="h-90 w-screen" />
+        <h1 className="text-black text-center font-mono text-3xl py-6 flex flex-row justify-center">
           <a
             href="/gwusTrading"
-            className="text-sm mr-5 bg-blue-300 border border-blue-500 px-3 py-1 rounded hover:bg-blue-400 transition"
+            className="text-black p-1 text-sm mr-5 bg-blue-300 border-3 border-blue-500 cursor-pointer "
           >
-            ⇦ Back
+            ⇦back
           </a>
-          Staffing Services
+          Trading In Building Materials
         </h1>
 
-        <section className="m-9 max-md:m-3">
+        <section className="flex gap-1 m-9 flex-col max-md:m-0">
           <div className="overflow-x-auto">
             <table className="table-auto border-collapse border border-gray-300 w-full">
-              <thead className="bg-gray-100">
-                <tr>
+              <thead>
+                <tr className="bg-gray-100">
                   <th className="border border-gray-300 text-left px-4 py-2">
                     Aspect
                   </th>
@@ -52,11 +64,7 @@ const GwusTradingStaffing = () => {
                       {item.aspect}
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      <ul className="list-disc list-inside space-y-1">
-                        {item.details.split("●").map((point, i) => (
-                          <li key={i}>{point.trim()}</li>
-                        ))}
-                      </ul>
+                      {item.details}
                     </td>
                   </tr>
                 ))}
