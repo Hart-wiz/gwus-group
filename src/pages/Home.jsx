@@ -46,17 +46,17 @@ const Home = () => {
             </h1>
             <div className=" w-[300px] flex flex-col max-md:items-center ">
               <img src={poster} alt="" className="w-full h-[200px]" />
-
               <p className="py-5 text-justify">
                 GWUS Group of Companies is a multi-sector conglomerate committed
                 to excellence, innovation, and sustainable growth, with
                 subsidiaries driving impact across key regional and global
                 industries.
               </p>
-
-              <button className="bg-yellow-700 text-white w-full  cursor-pointer p-3 hover:bg-red-900">
-                CONNECT WITH US
-              </button>
+              <a href="#contact">
+                <button className="bg-yellow-700 text-white w-full  cursor-pointer p-3 hover:bg-red-900">
+                  CONNECT WITH US
+                </button>
+              </a>
             </div>
           </section>
         </div>

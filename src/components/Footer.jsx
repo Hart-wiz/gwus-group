@@ -43,7 +43,12 @@ const Footer = () => {
                 <h2>FOLLOW US</h2>
                 <ul className="flex gap-3 pt-3">
                   <li className="w-9 bg-white rounded-xl">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://wa.me/2348029971941
+"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src={whatsapp} alt="" className="rounded-xl" />
                     </a>
                   </li>
@@ -58,7 +63,11 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="w-9 bg-white rounded-xl">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="tel:+2347020514858"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src={call} alt="" />
                     </a>
                   </li>
