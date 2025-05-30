@@ -39,8 +39,7 @@ const Form = () => {
           type="hidden"
           name="_next"
           value={
-            "http://localhost:5173/thankyou" ||
-            "http://gwus-group.vercel.app/thankyou"
+            "http://gwusgroup.com/thankyou" || "http://localhost:5173/thankyou"
           }
         />
       </form>
