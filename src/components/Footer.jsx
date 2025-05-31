@@ -19,15 +19,15 @@ const Footer = () => {
           <h2>International Address:</h2>
           <p>
             Building N0: 41, Street 400, Zone 56, Salwa Road, Doha, Qatar. Phone
-            numbers : ±97455925866 ±97477426368
+            numbers : +97455925866 +97477426368
           </p>
           <p></p>
         </div>
         <div>
           <h2>Nigerian Address: </h2>
           <p>
-            Emmanuel's house by Trinity College Road, Umuizu Afara, off Uchenna
-            Bus stop, Ubakala Road, Umuahia, Abia State, Nigeria.
+            15 Trinity College Road, Umuizu Afara, off Uchenna Bus stop, Ubakala
+            Road, Umuahia, Abia State, Nigeria.
             <br />
             Phone number: +2347020514858, +2348129522650, +2349065910188,
           </p>
@@ -35,7 +35,7 @@ const Footer = () => {
         <div>
           <h2>CONNECT WITH US</h2>
           <ul>
-            <li>info@gwusgroup.com</li>
+            <li>contact@gwusgroup.com</li>
 
             <li>Web:www.gwusgroup.com</li>
             <li>

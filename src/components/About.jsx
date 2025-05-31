@@ -60,29 +60,32 @@ const About = () => {
           </h2>
           <ul className="list-disc space-y-5">
             <li>
-              <b className="text-blue-900">COBEL Oil and Gas Limited –</b>COBEL
-              Oil & Gas is a trusted EPIC contractor delivering onshore and
-              offshore engineering, procurement, construction, and commissioning
-              projects. With an experienced in-house team, we offer end-to-end
-              solutions—from platform upgrades and brownfield modifications
-              offshore to plant improvements, civil works, and commissioning
-              onshore.
+              <b className="text-blue-900 tex">COBEL Oil and Gas Limited –</b>
+              COBEL Oil & Gas is a trusted EPIC contractor delivering onshore
+              and offshore engineering, procurement, construction, and
+              commissioning projects. With an experienced in-house team, we
+              offer end-to-end solutions—from platform upgrades and brownfield
+              modifications offshore to plant improvements, civil works, and
+              commissioning onshore.
             </li>
             <li>
-              <b className="text-blue-900">GWUSQatar Limited – </b>GWUSQATAR
-              LIMITED is a diversified company engaged in general trading,
-              import and export, and the sales and distribution of vehicles,
-              motorcycles, spare parts, textiles, and a wide range of goods. We
-              also offer installation, fabrication, and supply services, acting
-              as merchants, manufacturers’ representatives, agents, and dealers
-              in electrical, domestic, scientific, industrial, and general
-              merchandise.
+              <b className="text-blue-900 text-justify">GWUSQatar Limited – </b>
+              GWUSQATAR LIMITED is a diversified company engaged in general
+              trading, import and export, and the sales and distribution of
+              vehicles, motorcycles, spare parts, textiles, and a wide range of
+              goods. We also offer installation, fabrication, and supply
+              services, acting as merchants, manufacturers’ representatives,
+              agents, and dealers in electrical, domestic, scientific,
+              industrial, and general merchandise.
             </li>
             <li>
-              <b className="text-blue-900"> GWUSCobel Limited – </b>GWUSCOBEL
-              LTD is into Real Estate Services, Survey Services and General
-              Construction Services; Construction of Road, Drainages, Culverts
-              and buildings.
+              <b className="text-blue-900 text-justify">
+                {" "}
+                GWUSCobel Limited –{" "}
+              </b>
+              GWUSCOBEL LTD is into Real Estate Services, Survey Services and
+              General Construction Services; Construction of Road, Drainages,
+              Culverts and buildings.
             </li>
             <li>
               <b className="text-blue-900">GWUS Trading and Contracting –</b>
