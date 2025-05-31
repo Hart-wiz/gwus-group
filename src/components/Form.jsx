@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div>
       <form
-        action="https://formsubmit.co/gwusqatar@gmail.com"
+        action="https://formsubmit.co/contact@gwusgroup.com"
         method="POST"
         className=" flex flex-col gap-3  "
       >

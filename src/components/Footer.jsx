@@ -42,7 +42,7 @@ const Footer = () => {
               <div>
                 <h2>FOLLOW US</h2>
                 <ul className="flex gap-3 pt-3">
-                  <li className="w-9 bg-white rounded-xl">
+                  {/* <li className="w-9 bg-white rounded-xl">
                     <a
                       href="https://wa.me/2348029971941
 "
@@ -51,17 +51,17 @@ const Footer = () => {
                     >
                       <img src={whatsapp} alt="" className="rounded-xl" />
                     </a>
-                  </li>
-                  <li className="w-9 bg-white rounded-xl">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                  </li> */}
+                  {/* <li className="w-9 bg-white rounded-xl">
+                    <a>
                       <img src={fb} alt="" />
                     </a>
                   </li>
                   <li className="w-9 bg-white rounded-xl">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a>
                       <img src={x} alt="" />
                     </a>
-                  </li>
+                  </li> */}
                   <li className="w-9 bg-white rounded-xl">
                     <a
                       href="tel:+2347020514858"
