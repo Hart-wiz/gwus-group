@@ -29,7 +29,7 @@ const Home = () => {
           <ImageSlider
             images={images}
             article={articles}
-            title="Featuring cobol OIL & GAS"
+            title="Featuring COBEL OIL & GAS"
           />
         </section>
         <div className="flex-row flex max-md:flex-col px-12 pb-9  justify-center max-md:items-center max-md:px-4">
